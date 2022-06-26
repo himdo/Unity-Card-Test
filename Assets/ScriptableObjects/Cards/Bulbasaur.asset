@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e81fb8001848aad45bd02fc0f0f7b463, type: 3}
+  m_Name: Bulbasaur
+  m_EditorClassIdentifier: Assembly-CSharp::CardObject
+  Name: Bulbasaur
+  Stage: 0
+  Gender: 0
+  Types: 0300000007000000
+  HowToEvolve: 00000000
+  EvolutionItem: 
+  EvolutionSprite: []
+  ExpToLevel: 03000000
+  CurrentExp: 0
+  Evolution:
+  - {fileID: 11400000, guid: 9eaea186ccb9d4a408ccd50d65209f2a, type: 2}
+  CardNumber: 45
+  CardColor: {r: 0.20000002, g: 0.6, b: 0.20000002, a: 0}
+  BackgroundImage: {fileID: 0}
+  PokemonImage: {fileID: 0}
+  HP: 10
+  Attack: 5
+  Defense: 5
+  SpAttack: 7
+  SpDefense: 7
+  Speed: 5
+  Ability: {fileID: 0}
+  Attacks:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
