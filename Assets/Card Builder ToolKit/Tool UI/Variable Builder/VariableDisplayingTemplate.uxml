@@ -1,0 +1,12 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements">
+    <ui:VisualElement style="border-left-width: 4px; border-right-width: 4px; border-top-width: 4px; border-bottom-width: 4px; border-left-color: rgb(50, 50, 50); border-right-color: rgb(50, 50, 50); border-top-color: rgb(50, 50, 50); border-bottom-color: rgb(50, 50, 50); margin-left: 8px; margin-right: 8px; margin-top: 8px; margin-bottom: 8px;">
+        <ui:VisualElement style="flex-grow: 1; flex-direction: row;">
+            <ui:Label tabindex="-1" text="Variable Name: " display-tooltip-when-elided="true" />
+            <ui:Label tabindex="-1" text="Label" display-tooltip-when-elided="true" name="VariableNameText" />
+        </ui:VisualElement>
+        <ui:VisualElement style="flex-grow: 1; flex-direction: row;">
+            <ui:Label tabindex="-1" text="Variable Type: " display-tooltip-when-elided="true" />
+            <ui:Label tabindex="-1" text="Label" display-tooltip-when-elided="true" name="VariableTypeText" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

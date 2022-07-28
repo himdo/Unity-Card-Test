@@ -1,0 +1,14 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/Card%20Builder%20ToolKit/Tool%20UI/Variable%20Builder/CardVariableManager.uss?fileID=7433441132597879392&amp;guid=a8db612dd1e757a49ab9a2a6af0243ef&amp;type=3#CardVariableManager" />
+    <ui:VisualElement>
+        <ui:VisualElement style="flex-shrink: 0;">
+            <ui:Label tabindex="-1" text="Variable Name:" display-tooltip-when-elided="true" style="font-size: 16px;" />
+            <ui:TextField picking-mode="Ignore" label="Text Field" value="variable1" text="variable1" name="VariableNameTextField" />
+            <ui:Label tabindex="-1" text="Variable Type:" display-tooltip-when-elided="true" style="font-size: 16px;" />
+            <ui:EnumField type="VariableTypes, Assembly-CSharp" name="VariableTypeEnumField" />
+            <ui:Button tabindex="-1" text="Add Variable" display-tooltip-when-elided="true" name="AddVariableButton" />
+            <ui:Button tabindex="-1" text="Save Variables" display-tooltip-when-elided="true" focusable="true" name="SaveVariablesButton" />
+        </ui:VisualElement>
+        <ui:ScrollView name="VariableView" />
+    </ui:VisualElement>
+</ui:UXML>
