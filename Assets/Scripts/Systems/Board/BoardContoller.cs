@@ -9,6 +9,8 @@ public enum BoardNodeType
     Trainer,
     KnownItem,
     UnknownItem,
+    Water,
+    Tree,
     Null
 }
 
@@ -19,28 +21,16 @@ public class BoardWildPokemonChooser
 }
 
 
-[Serializable]
-[CreateAssetMenu(fileName = "Node", menuName = "Tools/BoardNodes")]
-public class BoardNodeObject :ScriptableObject
-{
-    public BoardNodeType NodeType;
-    public List<BoardWildPokemonChooser> WildPokemonAtNode;
-    [SerializeField]
-    public ItemObject ItemAtNode;
-    public TrainerObject TrainerAtNode;
-    public List<BoardNodeObject> NodeNeighbors;
-    public BoardLocation LocationOnBoard;
-    public GameObject GameObjectRepresentation;
-}
+
 
 public class BoardContoller : MonoBehaviour
 {
-    public Sprite Board;
-    public List<BoardNodeObject> BoardNodes = new List<BoardNodeObject>();
+    public GameObject SpawnNode;
+    public GameObject CurrentLocation;
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
