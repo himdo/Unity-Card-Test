@@ -11,6 +11,35 @@ public class BoardNode : MonoBehaviour
     public TrainerObject TrainerAtNode;
     public List<GameObject> NodeNeighbors;
     public BoardLocation LocationOnBoard;
+    public GameObject ClickableDisplayObject;
+    private GameObject PersonalDisplayNode;
+
+    private bool DisplayNodeActive = false;
+
+    public void SetDisplayNodeActive(bool active)
+    {
+        DisplayNodeActive = active;
+        PersonalDisplayNode.SetActive(active);
+    }
+
+    public bool GetDisplayNodeActive()
+    {
+        return DisplayNodeActive;
+    }
+
+    private void Start()
+    {
+        PersonalDisplayNode = GameObject.Instantiate(ClickableDisplayObject, transform);
+        Vector3 currentPost = transform.position;
+        currentPost.z = 15;
+        PersonalDisplayNode.transform.position = currentPost;
+        PersonalDisplayNode.SetActive(false);
+    }
+
+    private void Update()
+    {
+        
+    }
 
     void OnDrawGizmosSelected()
     {

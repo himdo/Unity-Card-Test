@@ -60,6 +60,5 @@ public class CameraController : MonoBehaviour
             cameraPosition.y = MinYLevel;
         }
         CameraGameObject.transform.position = cameraPosition;
-        Debug.Log(MoveDirection);
     }
 }
